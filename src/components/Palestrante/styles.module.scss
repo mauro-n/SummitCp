@@ -1,0 +1,96 @@
+@use '../../assets/css/theme' as t;
+
+.img-wrapper {
+    position: relative;
+
+
+}
+
+@media(min-width: t.$sm) {
+    .img-wrapper {
+        &:hover {
+            &>.description {
+                opacity: 100%;
+            }
+        }
+    }
+}
+
+.img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.description {
+    transition: all 150ms ease-in-out;
+    opacity: 0%;
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(rgba(0, 0, 0, 0.0), black);
+    bottom: 2px;
+    height: 70%;
+    display: flex;
+    place-items: end;
+    padding: 1rem 0 10px 0;
+    width: 99.5%;
+    text-align: center;
+}
+
+.desc-text {
+    padding: 1.2rem;
+}
+
+.name {
+    font-size: 3.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.skills-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.skill {
+    border: 2px solid black;
+    padding: 0.1rem 1rem;
+    padding-top: 0.4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 19px;
+}
+
+@media(max-width: t.$sm) {
+    .img {
+        height: 200px;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .title {
+        margin: 0.5rem 0 -10px 0;
+        font-size: 1.5rem;
+    }
+
+    .skills-wrapper {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .skill {
+        font-size: 1.3rem;
+        width: auto;
+        text-align: center;
+    }
+}

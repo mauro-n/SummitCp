@@ -1,0 +1,13 @@
+@use '../../assets/css/theme' as t;
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+}
+
+@media (max-width: t.$sm) {
+    .wrapper {
+        flex-direction: column;
+    }
+}

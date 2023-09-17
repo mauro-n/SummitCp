@@ -1,0 +1,82 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.invert {
+    flex-direction: column-reverse;
+}
+.img-wrapper {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+.img {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    filter: sepia(0.2) blur(0.5px);
+}
+
+.img-1 {
+    animation: rollImg 30s ease-in-out infinite;
+}
+
+@keyframes rollImg {
+    0% {
+        opacity: 0%;
+    }
+
+    40% {
+        opacity: 0%;
+    }
+
+    50% {
+        transform: scale(1);        
+        opacity: 100%;
+    }
+
+    80% {     
+        opacity: 100%;
+    }
+
+    100% {
+        transform: scale(1.3);
+        opacity: 0%;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: #E00748;
+    height: 100%;
+    max-height: 100px;
+    position: relative;
+    text-align: start;
+    padding: 2rem;
+    color: black;
+}
+
+.content-title {
+    font-size: 2.3rem;
+    padding: 0.2rem 0 2rem 0;
+}
+
+.content-main {
+    font-family: 'Larken';
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 5.3rem;
+    letter-spacing: -5px;
+}
+
+.content-tag {
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.7rem;
+    bottom: 1rem;
+    right: 2rem;
+}

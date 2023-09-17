@@ -1,0 +1,31 @@
+.wrapper {
+    width: 98%;
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+
+    > .icon:nth-child(4n + 2) {
+        margin-right: 1em;
+    }
+}
+
+.icon {
+    height: 45px;
+    margin: -7px;
+    padding: 0;
+    filter: brightness(0.3);
+    transform: scaleX(-1) rotate(0deg);
+}
+
+.hovering {
+    animation: rotate 1s ease-in-out both;
+}
+
+@keyframes rotate {
+    0% {
+        transform: scaleX(-1) rotate(0deg);
+    }
+    100% {
+        transform: scaleX(-1) rotate(-135deg);
+    }
+}

@@ -1,0 +1,58 @@
+@use '../../assets/css/theme' as t;
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.wrapper {
+    font-family: 'Korium';
+    text-transform: uppercase;
+    color: #E00748;
+    position: relative;
+    margin: 0 0 6rem 0;
+}
+
+.aqui {
+    font-size: calc(8rem + 1vw);
+}
+
+.transform {
+    font-size: calc(12rem + 3vw);
+}
+
+.mundo {
+    position: absolute;
+    bottom: -15px;
+    right: 0px;
+    font-size: 4rem;
+    display: block;
+    /* transform: rotate(90deg); */
+}
+
+@media(max-width: t.$md) {
+    .container {
+        flex-direction: column;
+    }
+    .wrapper {
+        align-self: center;
+        margin: 0 3.5rem 0 0;
+    }
+
+    .aqui {
+        font-size: 7rem;
+    }
+
+    .transform {
+        font-size: 7rem;
+    }
+
+    .mundo {
+        font-size: 3rem;
+        bottom: 27px;
+        right: -50px;
+        transform: rotate(90deg);
+    }
+}

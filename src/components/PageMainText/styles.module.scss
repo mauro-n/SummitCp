@@ -1,0 +1,66 @@
+@use '../../assets/css/theme' as t;
+
+.text-wrapper {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: t.$width-lg;
+    text-align: center;
+}
+
+.main-text {
+    font-size: 7.5rem;
+    padding: 0.5rem;
+}
+
+.sec-text {
+    padding-right: 10.5em;
+    font-size: 3rem;
+    position: relative;
+    height: 45px;
+}
+
+.line {
+    display: block;
+    position: absolute;
+    right: -1vw;
+    bottom: 25px;
+    height: 1px;
+    width: 35%;
+    border-top: 3px solid t.$primary-l1;
+}
+
+
+
+@media(max-width: t.$sm) {
+    .main-text {
+        font-size: 6.5rem;
+    }
+
+    .sec-text {
+        padding: 2rem 0 0 0;
+        width: 100vw;
+    }
+
+    .line {
+        bottom: -10px;
+        right: 1rem;
+        width: 150px;
+    }
+}
+
+@media(min-width: t.$sm) and (max-width: t.$md) {
+    .main-text {
+        font-size: 6.8rem;
+        max-width: 500px;
+    }
+    
+    .sec-text {
+        padding-top: 1rem;
+        font-size: 2.5rem;
+        color: t.$gray-l2;
+        text-align: end;
+    }
+}
+

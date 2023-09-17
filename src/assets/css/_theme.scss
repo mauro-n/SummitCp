@@ -1,0 +1,61 @@
+$width-lg: 992px;
+$width-md: 875px;
+
+/* Primary */
+$primary-d3: #172554;
+$primary-d2: #1d4ed8;
+$primary-d1: #2B006A;
+$primary: #6801FF;
+$primary-l1: #5C42FF;
+$primary-l2: #93c5fd;
+$primary-l3: #dbeafe;
+$primary-l4: hsl(202, 93%, 95%);
+
+/* Grays */
+$gray-d4: #000000;
+$gray-d3: #030712;
+$gray-d2: #1f2937;
+$gray-d1: #4b5563;
+$gray: #6b7280;
+$gray-l1: #9ca3af;
+$gray-l2: #d1d5db;
+$gray-l3: #e5e7eb;
+$gray-l4: #f9fafb;
+
+/* Accents */
+$danger-d2 : #450a0a;
+$danger-d1 : #cb3434;
+$danger : #ef4444;
+$danger-l1 : #fee2e2;
+$danger-l2 : #fff6f3;
+
+$warning-d1 : #a16207;
+$warning : #eab308;
+$warning-l1 : #fef08a;
+
+$success-d1 : #052e16;
+$success : #22c55e;
+$success-l1 : #bbf7d0;
+$success-l2 : #f1fffa;
+
+/* Typography */
+$headline1: 3.6rem;
+$headline2: 3rem;
+$headline3: 2.5rem;
+$headline4: 2.1rem;
+$headline5: 1.728rem;
+$headline6: 1.44rem;
+$body1: 1rem;
+$body2: 0.9rem;
+$subtitle1: 1rem;
+$subtitle2: 0.9rem;
+$button-text: 14px;
+$overline: 10px;
+$caption: 12px;
+
+/* Breakpoints */
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;

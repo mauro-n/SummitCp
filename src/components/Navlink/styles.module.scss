@@ -1,0 +1,51 @@
+@use '../../assets/css/theme' as t;
+
+$underline-distance: 10px;
+$navlink-height: 15px;
+$navlink-width: 160px;
+
+.navlink {
+    color: t.$gray-l3;
+    width: $navlink-width;
+    height: $navlink-height;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: calc($underline-distance + $navlink-height);
+        width: $navlink-width;
+        top: 0px;
+        display: block;
+        border-bottom: 2px solid t.$gray-l1;
+        transform: scaleX(1);
+        transition: transform 200ms ease;
+    }
+
+    &::before {
+        content: '';
+        height: calc($underline-distance + $navlink-height);
+        width: $navlink-width;
+        display: block;
+        position: absolute;
+        border-bottom: 2px solid t.$primary;
+        transform: scale(1);
+        transition: transform 200ms ease;
+    }
+
+    &:hover {
+        &::after {
+            transform: scaleX(0) translateY(-0.4px);
+        }
+    }
+}
+
+.active {
+    &::after {
+        border-bottom: 2px solid t.$gray-l4;
+    }
+}

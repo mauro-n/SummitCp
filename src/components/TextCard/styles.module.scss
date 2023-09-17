@@ -1,0 +1,24 @@
+@use '../../assets/css/theme' as t;
+
+
+.wrapper {
+    max-width: 40%;
+    text-align: center;
+
+    &>h2 {
+        text-transform: uppercase;
+        padding: 1rem 0;
+        font-size: 3rem;
+    }
+
+    &>p {
+        padding: 0 2rem;
+        font-size: 1.7rem;
+    }
+}
+
+@media(max-width: t.$md) {
+    .wrapper {
+        max-width: 95%;
+    }
+}

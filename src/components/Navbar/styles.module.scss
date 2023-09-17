@@ -1,0 +1,44 @@
+@use '../../assets/css/theme' as t;
+
+$navbar-height: 80px;
+$branding-width: 140px;
+$menu-width: 80px;
+
+.wrapper {
+    display: grid;
+    grid-template-columns: $branding-width auto $menu-width;
+    gap: 3rem;
+    align-items: center;
+    height: $navbar-height;
+    background-color: transparent;
+    padding: 0 2rem;
+}
+
+.links-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-left: -50px;
+    gap: 1rem;
+}
+
+.branding {
+    height: 40px;
+}
+
+@media (min-width: t.$lg) {
+    .wrapper {
+        padding: 0 4rem;
+    }
+}
+
+@media (max-width: t.$lg) {
+    .wrapper {
+        align-items: center;
+        grid-template-columns: auto 50px;
+        justify-items: start;
+    }
+
+    .links-wrapper {
+        display: none;
+    }
+}
