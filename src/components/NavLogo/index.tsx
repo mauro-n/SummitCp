@@ -1,5 +1,5 @@
 import style from './styles.module.scss';
-import icon from '../../assets/images/logo2.png';
+import icon from '../../assets/images/logo2-min.png';
 
 export const NavLogo = () => {
     return (

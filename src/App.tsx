@@ -9,6 +9,7 @@ import { AppContext } from './context/AppContext'
 import { TransformWrld } from './components/TransformWrld'
 import { ImgCard3 } from './components/ImgCard3'
 import { Palestrantes } from './components/Palestrantes'
+import { FutureSection } from './components/FutureSection'
 
 function App() {
 
@@ -35,6 +36,8 @@ function App() {
           <Palestrantes />
         </>
       </Container>
+      <Spacing size="xlg" />
+      <FutureSection />
     </>
   )
 }

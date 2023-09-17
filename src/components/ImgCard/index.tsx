@@ -20,6 +20,7 @@ export const ImgCard = ({ img, title, content, tag, invert }: ImgCard) => {
                 {img.map((el, index) => {
                     return (
                         <img
+                            key={index}
                             src={el}
                             className={`
                                 ${style['img']}

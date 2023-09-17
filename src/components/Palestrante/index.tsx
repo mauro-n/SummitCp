@@ -1,5 +1,5 @@
 import style from './styles.module.scss';
-import defaultProfilePic from '../../assets/images/default-profile.jpg';
+import defaultProfilePic from '../../assets/images/default-profile-min.jpg';
 import { Spacing } from '../Spacing';
 
 type Palestrante = {
@@ -27,8 +27,8 @@ export const Palestrante = ({ name, title, skills, img, description }: Palestran
             <p className={style['title']}>{title}</p>
             <Spacing size="sm"></Spacing>
             <div className={style['skills-wrapper']}>
-                {skills?.map(el => {
-                    return <span className={style['skill']}>{el}</span>
+                {skills?.map((el, index) => {
+                    return <span key={index} className={style['skill']}>{el}</span>
                 })}
             </div>
         </div>

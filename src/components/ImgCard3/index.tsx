@@ -1,10 +1,10 @@
 import { ImgCard } from '../ImgCard';
 import style from './styles.module.scss';
-import img from '../../assets/images/laura-heimann-iCxCNJvmBTU-unsplash.jpg';
+import img from '../../assets/images/laura-heimann-iCxCNJvmBTU-unsplash-min.jpg';
 import img1 from '../../assets/images/svgbg.svg';
-import img2 from '../../assets/images/desola-lanre-ologun-IgUR1iX0mqM-unsplash.jpg';
-import img3 from '../../assets/images/product-school-zFBVxClB2I8-unsplash.jpg';
-import img4 from '../../assets/images/wonderlane-w1s5H_3Zn48-unsplash.jpg';
+import img2 from '../../assets/images/desola-lanre-ologun-IgUR1iX0mqM-unsplash-min.jpg';
+import img3 from '../../assets/images/product-school-zFBVxClB2I8-unsplash-min.jpg';
+import img4 from '../../assets/images/wonderlane-w1s5H_3Zn48-unsplash-min.jpg';
 
 export const ImgCard3 = () => {
     return (

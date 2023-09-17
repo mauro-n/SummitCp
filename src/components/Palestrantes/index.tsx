@@ -1,12 +1,11 @@
-import { Circles } from '../Circles';
 import { Palestrante } from '../Palestrante';
 import style from './styles.module.scss';
-import p1 from '../../assets/images/portraits/min-hius-r-ii4jKDL6Y-unsplash.jpg';
-import p2 from '../../assets/images/portraits/moises-alex-LkZRTThjBHA-unsplash.jpg';
-import p3 from '../../assets/images/portraits/samsung-memory-7e5J2V80CDo-unsplash.jpg';
-import p4 from '../../assets/images/portraits/yusron-el-jihan-rpn0cc7MtyQ-unsplash.jpg';
-import p5 from '../../assets/images/portraits/michael-dam-mEZ3PoFGs_k-unsplash.jpg';
-import p6 from '../../assets/images/portraits/ayo-ogunseinde-sibVwORYqs0-unsplash.jpg'
+import p1 from '../../assets/images/portraits/min-hius-r-ii4jKDL6Y-unsplash-min.jpg';
+import p2 from '../../assets/images/portraits/moises-alex-LkZRTThjBHA-unsplash-min.jpg';
+import p3 from '../../assets/images/portraits/samsung-memory-7e5J2V80CDo-unsplash-min.jpg';
+import p4 from '../../assets/images/portraits/yusron-el-jihan-rpn0cc7MtyQ-unsplash-min.jpg';
+import p5 from '../../assets/images/portraits/michael-dam-mEZ3PoFGs_k-unsplash-min.jpg';
+import p6 from '../../assets/images/portraits/ayo-ogunseinde-sibVwORYqs0-unsplash-min.jpg'
 import { Spacing } from '../Spacing';
 
 export const Palestrantes = () => {
@@ -15,8 +14,7 @@ export const Palestrantes = () => {
             <div className={style['head']}>
                 <h2>
                     Palestrantes
-                </h2>
-                <Circles />
+                </h2>                
                 <p className={style['text']}>
                     Um ecossistema de possibilidades para você transformar a sua carreira. São diversos palcos de conteúdo simultâneos, com mais de 500 palestrantes.
                 </p>
